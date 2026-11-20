@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>softsparx | Data Migration Testing & QA</title>
+  <meta name="description" content="softsparx provides consultation and development services for testing and QA of source and target data ecosystems, ensuring full data parity across any platform, at any scale.">
+  <meta name="theme-color" content="#0b111c">
+
+  <meta property="og:title" content="softsparx | Data Migration Testing & QA">
+  <meta property="og:description" content="Full parity between source and target data ecosystems, whatever the platform and whatever the size.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/icon-512.png">
+
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav" id="nav">
+    <div class="wrap nav__inner">
+      <a class="brand" href="#top" aria-label="softsparx home">
+        <img src="assets/bulb.png" alt="" width="28" height="31">
+        <span>softsparx</span>
+      </a>
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#approach">Approach</a>
+        <a href="#platforms">Platforms</a>
+        <a href="#resources">Resources</a>
+        <a class="btn btn--sm" href="#contact">Get in touch</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow"><span class="dot"></span> Data migration testing &amp; QA</p>
+          <h1>Migrate with <span class="hl">confidence.</span><br>Prove every row.</h1>
+          <p class="lead">We design and build the testing that proves your target data ecosystem matches your source, completely and verifiably, regardless of platform or scale.</p>
+          <div class="hero__cta">
+            <a class="btn" href="#contact">Talk to us</a>
+            <a class="btn btn--ghost" href="#approach">How we work</a>
+          </div>
+          <ul class="hero__facts">
+            <li><strong>Platform-agnostic</strong><span>On-prem to cloud, cloud to cloud</span></li>
+            <li><strong>Any scale</strong><span>From gigabytes to petabytes</span></li>
+            <li><strong>Consult + build</strong><span>Strategy and working code</span></li>
+          </ul>
+        </div>
+
+        <!-- Parity visual -->
+        <div class="parity" id="parity" aria-label="Illustration: source and target data checks reaching parity">
+          <div class="parity__bar">
+            <i></i><i></i><i></i>
+            <span class="mono">parity_run_0142</span>
+          </div>
+          <div class="parity__heads mono">
+            <span>SOURCE<small>on-prem</small></span>
+            <span class="parity__mid">vs</span>
+            <span>TARGET<small>lakehouse</small></span>
+          </div>
+          <ul class="checks mono" id="checks">
+            <li data-src="48,210,331" data-tgt="48,210,331"><em>row_count</em></li>
+            <li data-src="214 cols" data-tgt="214 cols"><em>schema</em></li>
+            <li data-src="a91f…7c2e" data-tgt="a91f…7c2e"><em>checksum</em></li>
+            <li data-src="$9,402,118.55" data-tgt="$9,402,118.55"><em>sum(amount)</em></li>
+            <li data-src="0 / 0" data-tgt="0 / 0"><em>nulls · dupes</em></li>
+            <li data-src="0 orphans" data-tgt="0 orphans"><em>ref_integrity</em></li>
+          </ul>
+          <div class="parity__foot mono" id="parityFoot">
+            <span class="status" id="parityStatus">running…</span>
+            <span id="parityCount">0 / 6 matched</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="services">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="eyebrow">What we do</p>
+          <h2>Testing built for the realities of data migration</h2>
+          <p class="sub">A migration is only finished when you can demonstrate the new system tells the same story as the old one. We help you plan that proof, build it, and run it.</p>
+        </header>
+
+        <div class="cards">
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/><circle cx="19" cy="18" r="2"/></svg>
+            </div>
+            <h3>Data parity validation</h3>
+            <p>Row counts, checksums, aggregates, and column-level comparisons between source and target, down to the record when needed.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M8 7 3 12l5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+            </div>
+            <h3>Test automation development</h3>
+            <p>Repeatable, version-controlled test frameworks that run on every load, so parity is checked continuously, not once.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 5h16v4H4zM4 15h16v4H4zM12 9v6"/></svg>
+            </div>
+            <h3>Schema &amp; transformation testing</h3>
+            <p>Verify type mappings, business rules, and ETL logic produce the right result, including edge cases, nulls, and encodings.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 4.5 3.4 8 8 9 4.6-1 8-4.5 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg>
+            </div>
+            <h3>QA strategy &amp; consultation</h3>
+            <p>Test planning, risk assessment, and sign-off criteria, so stakeholders know exactly what “done” means before cutover.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg>
+            </div>
+            <h3>Performance at scale</h3>
+            <p>Comparison techniques that stay fast on very large tables: partitioned, sampled, or hashed, depending on what the data demands.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M5 4h14v16H5z"/><path d="M9 9h6M9 13h6M9 17h3"/></svg>
+            </div>
+            <h3>Reporting &amp; audit evidence</h3>
+            <p>Clear, defensible reports of what was tested and what matched, ready for compliance, audit, and executive review.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPROACH -->
+    <section class="section section--alt" id="approach">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="eyebrow">Our approach</p>
+          <h2>From first assessment to final sign-off</h2>
+        </header>
+
+        <ol class="steps">
+          <li>
+            <span class="steps__n mono">01</span>
+            <h3>Assess</h3>
+            <p>Map the source and target ecosystems, data volumes, and the migration plan. Identify where risk concentrates.</p>
+          </li>
+          <li>
+            <span class="steps__n mono">02</span>
+            <h3>Design</h3>
+            <p>Define the validation strategy: which checks, at what granularity, with what tolerances and sign-off criteria.</p>
+          </li>
+          <li>
+            <span class="steps__n mono">03</span>
+            <h3>Build</h3>
+            <p>Develop automated comparison and test suites tailored to your platforms and integrated with your pipelines.</p>
+          </li>
+          <li>
+            <span class="steps__n mono">04</span>
+            <h3>Validate</h3>
+            <p>Run the suites against each migration wave, investigate every discrepancy, and trace it to root cause.</p>
+          </li>
+          <li>
+            <span class="steps__n mono">05</span>
+            <h3>Certify</h3>
+            <p>Deliver evidence of parity and a clean handover, with tests your team can keep running after cutover.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- PLATFORMS -->
+    <section class="section" id="platforms">
+      <div class="wrap split">
+        <div>
+          <p class="eyebrow">Platforms</p>
+          <h2>Whatever you’re moving from, and to</h2>
+          <p class="sub">Our approach is built on data fundamentals rather than any single vendor, so it adapts to the systems you actually run. Typical engagements include moving from on-premises databases into modern cloud platforms such as Databricks.</p>
+          <div class="route mono" aria-label="Example migration path">
+            <span class="route__node">On-prem DB</span>
+            <span class="route__line"><i></i></span>
+            <span class="route__node route__node--accent">Databricks</span>
+          </div>
+          <p class="note">Don’t see your stack? Ask us. If it holds data, we can test it.</p>
+        </div>
+        <div class="tags" aria-label="Example platforms">
+          <span>Databricks</span><span>Snowflake</span><span>Azure Synapse</span><span>Google BigQuery</span>
+          <span>Amazon Redshift</span><span>SQL Server</span><span>Oracle</span><span>PostgreSQL</span>
+          <span>MySQL</span><span>Teradata</span><span>Delta Lake</span><span>Parquet / files</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESOURCES -->
+    <section class="section section--alt" id="resources">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="eyebrow">Resources</p>
+          <h2>Media &amp; links</h2>
+          <p class="sub">Write-ups, talks, and code from us. Replace the placeholder links below with your own.</p>
+        </header>
+
+        <!-- EDIT ME: update href, title, description for each card. Duplicate a block to add more. -->
+        <div class="links">
+          <a class="link" href="https://github.com/" target="_blank" rel="noopener">
+            <span class="link__type mono">GITHUB</span>
+            <h3>Open-source tooling</h3>
+            <p>Repositories and sample frameworks for data comparison and validation.</p>
+            <span class="link__go" aria-hidden="true">↗</span>
+          </a>
+          <a class="link" href="https://www.linkedin.com/" target="_blank" rel="noopener">
+            <span class="link__type mono">LINKEDIN</span>
+            <h3>Company updates</h3>
+            <p>News, insights, and thoughts on data migration quality.</p>
+            <span class="link__go" aria-hidden="true">↗</span>
+          </a>
+          <a class="link" href="https://www.youtube.com/" target="_blank" rel="noopener">
+            <span class="link__type mono">VIDEO</span>
+            <h3>Walkthroughs &amp; demos</h3>
+            <p>See how a parity validation run works end to end.</p>
+            <span class="link__go" aria-hidden="true">↗</span>
+          </a>
+          <a class="link" href="#contact">
+            <span class="link__type mono">ARTICLE</span>
+            <h3>Migration QA checklist</h3>
+            <p>What to verify before, during, and after a platform migration.</p>
+            <span class="link__go" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="wrap">
+        <div class="cta">
+          <div>
+            <h2>Planning a migration?</h2>
+            <p class="sub">Tell us about your source and target systems. We’ll respond with how we’d approach proving parity.</p>
+          </div>
+          <div class="cta__actions">
+            <!-- EDIT ME: replace with your real email address -->
+            <a class="btn btn--lg" href="mailto:info@softsparx.com">info@softsparx.com</a>
+            <span class="note">or connect with us on <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <a class="brand" href="#top" aria-label="softsparx home">
+        <img src="assets/bulb.png" alt="" width="22" height="25">
+        <span>softsparx</span>
+      </a>
+      <p>© <span id="year">2026</span> softsparx. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
